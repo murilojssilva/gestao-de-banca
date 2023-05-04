@@ -7,23 +7,8 @@ import { useContext } from 'react'
 import { SectionList, Text, View } from 'react-native'
 
 export function Home() {
-  // const { bets } = useContext(BetsContext)
+  const { bets } = useContext(BetsContext)
 
-  const bets = [
-    {
-      title: '26.08.22',
-      data: [
-        {
-          id: '2',
-          name: 'Escanteios em Vasco x Flamengo',
-          type: 'negative',
-          description: '+ de 6 escanteios na partida',
-          hour: '20:00',
-          units: 2,
-        },
-      ],
-    },
-  ]
   return (
     <View className="flex-1 items-center px-4 py-16 bg-zinc-900 gap-4">
       <View className="flex-row items-center justify-between bg-zinc-800 rounded-lg p-4 w-full">
